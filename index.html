@@ -8,6 +8,7 @@
     <title>答案之书</title>
 </head>
 <style>
+    .Submit,
     .Reset {
         -webkit-transition-duration: 0.4s;
         transition-duration: 0.4s;
@@ -19,23 +20,16 @@
         border-radius: 5px;
     }
 
-    .Reset:hover {
+    #ehe {
+        visibility: hidden;
+    }
+
+    .Submit:hover {
         background-color: #2c4e2e;
         color: white;
     }
 
-    .Submit {
-        -webkit-transition-duration: 0.4s;
-        transition-duration: 0.4s;
-        padding: 7px;
-        text-align: center;
-        background-color: white;
-        color: black;
-        border: 2px solid #2c4e2e;
-        border-radius: 5px;
-    }
-
-    .Submit:hover {
+    .Reset:hover {
         background-color: #2c4e2e;
         color: white;
     }
@@ -166,6 +160,7 @@
                     break;
             }
             document.getElementById('answer').innerHTML = x;
+            document.getElementById("ehe").style.visibility = 'visible';
         }
     </script>
     <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
@@ -183,8 +178,8 @@
     </center>
 
     <p style="text-align:center;color:rgb(55, 94, 11);font-size:26px;" id="answer"></p>
-    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-    <p style="text-align:center">哈哈哈仅供参考，诶嘿☆⌒(ゝ。∂)</p>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <p style="text-align:center" id="ehe">哈哈哈仅供参考，诶嘿☆⌒(ゝ。∂)</p>
 </body>
 
 </html>
